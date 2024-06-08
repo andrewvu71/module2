@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Andrew Vu</h1> <!-- Replace with the developer's name -->
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="avatar.jpg" alt="Andrew Vu" class="profile-photo"> <!-- Replace with actual photo -->
+        <h2>About Me</h2>
+        <p>Hello! I am Andrew Vu, a novice developer willing to learn more!</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="projects">
+            <div class="project large">
+                <a href="https://andrewvu71.github.io/module1/" target="_blank">
+                    <img src="project1.jpg" alt="First Challenge">
+                    <h3>Project 1</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://andrewvu71.github.io/Park-Rainger-App/" target="_blank">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/jtschams/dish-delight" target="_blank">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:andrewvu71@gmail.com">andrewvu71@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/andrewvu71" target="_blank">linkedin.com/in/andrewvu71</a></p>
+        <p>GitHub: <a href="https://github.com/andrewvu71" target="_blank">github.com/andrewvu71</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Andrew Vu</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
