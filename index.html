@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Correctly link to the CSS file in the assets folder -->
+<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
@@ -18,44 +21,47 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Andrew Vu</h1> <!-- Replace with the developer's name -->
+        <h1>Andrew Vu</h1>
     </header>
 
+    <!-- Decorative Background Shapes -->
+    <div class="background-shape shape1"></div>
+    <div class="background-shape shape2"></div>
+    <div class="background-shape shape3"></div>
+
     <!-- About Section -->
-    <section id="about">
-        <img src="avatar.jpg" alt="Andrew Vu" class="profile-photo"> <!-- Replace with actual photo -->
+    <section id="about" class="card">
         <h2>About Me</h2>
         <p>Hello! I am Andrew Vu, a novice developer willing to learn more!</p>
     </section>
 
     <!-- Work Section -->
-    <section id="work">
+    <section id="work" class="card">
         <h2>My Work</h2>
         <div class="projects">
-            <div class="project large">
+            <div class="project">
                 <a href="https://andrewvu71.github.io/module1/" target="_blank">
-                    <img src="project1.jpg" alt="First Challenge">
                     <h3>Project 1</h3>
+                    <p>This was my challenge 1 assignment</p>
                 </a>
             </div>
             <div class="project">
                 <a href="https://andrewvu71.github.io/Park-Rainger-App/" target="_blank">
-                    <img src="project2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
+                    <p>My Park Rainger application</p>
                 </a>
             </div>
             <div class="project">
                 <a href="https://github.com/jtschams/dish-delight" target="_blank">
-                    <img src="project3.jpg" alt="Project 3">
                     <h3>Project 3</h3>
+                    <p>This was the Dish Delight recipe manager application</p>
                 </a>
             </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="card">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:andrewvu71@gmail.com">andrewvu71@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/andrewvu71" target="_blank">linkedin.com/in/andrewvu71</a></p>
